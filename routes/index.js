@@ -1,9 +1,9 @@
 const path = require('path');
 const router = require('express').Router();
-// const apiRoutes = require('./api');
+const apiRoutes = require('./api');
 
 // api routes
-// router.use('/api', apiRoutes);
+router.use('/api', apiRoutes);
 
 // no api routes send react app build file
 router.use((req, res) => {
